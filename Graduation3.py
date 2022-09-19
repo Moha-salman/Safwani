@@ -1,0 +1,39 @@
+from tkinter import *
+#from
+Sign_up=Tk()
+Sign_up.title('Password encrption')
+Sign_up.geometry('500x500')
+Sign_up.config(background='#FFFCFC')
+#Sign_up.iconbitmap("C:\\Users\\MohammedAl-Safwani\\Desktop\\login.png")
+#___Title____
+title = Label(Sign_up, text='Sign up & Login' , font=('courier',15),bg='black',fg='white')
+title.pack()
+#___frame___
+fr1=Frame(Sign_up, width='400', height='400', bg='whitesmoke')
+fr1.pack(pady=30)
+#___image___
+
+#Photo = PhotoImage(file='C:\\Users\\Free\\Desktop\\login.png')
+#Panel = Lable(Sign_up, image= Photo)
+#panel.place(x=200,y=40)
+#___lable___
+lb1=Label(fr1, text='Username :',font=('courier',15),bg='whitesmoke',)
+lb1.place(x=10,y=140)
+lb2=Label(fr1, text='Password :',font=('courier',15),bg='whitesmoke',)
+lb2.place(x=10,y=180)
+#___Entry___
+en1=Entry(fr1)
+en1.place(x=134,y=145)
+en2=Entry(fr1)
+en2.place(x=134,y=185)
+#____Button____
+bt1=Button(fr1,text='Sign Up',font=('courier',15),bg='#246B98', width='12')
+bt1.place(x=15,y=260)
+bt2=Button(fr1,text='login',font=('courier',15),bg='#612498',width='12')
+bt2.place(x=155,y=260)
+#____Forget Password____
+fp=Checkbutton(fr1, text='Forget Password !',font=('courier',15),bg='whitesmoke',)
+fp.place(x=40,y=220)
+dev=Label(fr1, text='Devlobed by 3rd gen Gradtuate of C.C 2022',font=('courier',10),bg='whitesmoke',)
+dev.place(x=40,y=340)
+Sign_up.mainloop()
